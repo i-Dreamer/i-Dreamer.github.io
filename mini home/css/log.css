@@ -1,0 +1,87 @@
+/*
+.flex-page{
+    position: relative;
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.flex-page .page-content{
+    text-align: center;
+    z-index: 100;
+    margin-bottom: 5vh;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+*/
+/*.page-full{
+    position:absolute;
+    left: 0;
+    top: 0;
+    font-weight: 100;
+    height: 300px;
+}*/
+ .description{
+     position:absolute;
+     right: 5px;
+     top: 0;
+}
+ a.avatar{
+    margin-bottom: 30px;
+}
+a.avatar{
+    /*text-align: center;*/
+    position:absolute;
+    left: 44.5%;
+    top: 12%;
+    cursor: pointer;
+}
+ a.avatar>img{
+    width:130px;
+    height:130px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #FFF;
+    transition:all 1.6s cubic-bezier(.17,.67,.62,1.22);
+    -webkit-transition:all 1.6s cubic-bezier(.17,.67,.62,1.22);
+    -moz-transition:all 1.6s cubic-bezier(.17,.67,.62,1.22);
+    -o-transition:all 1.6s cubic-bezier(.17,.67,.62,1.22);
+    -ms-transition:all 1.6s cubic-bezier(.17,.67,.62,1.22);
+}
+ a.avatar>img:hover{
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Safari and Chrome */
+}
+  .description{
+    color: #0cc;
+    margin: 36px 0;
+    font-size: 22px;
+    box-sizing: border-box;
+}
+ .links{
+    position:absolute;
+    left: 24%;
+    bottom: 22%;
+    padding: 0;
+}
+ .links>a{
+    cursor: pointer;
+    color: #0cc;
+    padding: 0 60px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ .links>a:hover{
+    color: #00adb5;
+}

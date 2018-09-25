@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title>大智的个人站</title>
+	<meta charset="utf-8">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/log.css">
+	<!-- favicon -->
+	<link href="img/favicon.ico" rel="Shortcut Icon" type="image/ico">
+	<!-- font-awesome -->
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="changeHeaderBg()">
+<!--Preloader-->
+<div id="preloader">
+	<div id="status">
+		<img alt="preloader" src="img/logo.png">
+	</div>
+</div>
+<!--Preloader end-->
+
+<!-- header -->
+<header id="header-bg-2">
+	<!--<div id="cd-logo"><a href="/"><img src="img/logo.png" alt="Logo"></a></div>-->
+		<a class="avatar">
+			<img src="img/log.png" alt="log">
+		</a>
+
+		<div id="particles"></div>
+			<!--<div class="description">-->
+				<!--&lt;!&ndash;The Harder You Work, The Luckier You Will Be.&ndash;&gt;-->
+			<!--</div>-->
+			<div class="links">
+				<a href="http://blog.minhow.com">BLOG</a>
+				<a href="//github.com/i-Dreamer" target="_blank">GITHUB</a>
+				<a href="//weibo.com/WongMinHo">WEIBO</a>
+				<a href="http://blog.minhow.com/about/">ME</a>
+			</div>
+
+	<!-- motto or description -->
+	<p class="motto"></p>
+		<script type="text/javascript">
+            function changeHeaderBg(){
+                var random_bg = Math.floor(Math.random() * 109 + 1);
+                var bg = 'url(https://annie-header-bg-1253939655.cos.ap-beijing.myqcloud.com/' + random_bg + '.jpg)';
+                $("#header-bg-2").css("background-image", bg);
+            }
+		</script>
+		<style type="text/css">
+			.change-header-bg i{
+				text-align: center;
+				cursor: pointer;
+				pointer-events: bounding-box;
+			}
+		</style>
+		<span class="change-header-bg">
+	&nbsp;<i  class="fa fa-camera-retro" onclick="changeHeaderBg()"></i>
+</span>
+
+	</p>
+
+</header>
+
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+
+<script src="js/motto.js"></script>
+<script>
+    $(".motto").html(getMingYanContent());
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
