@@ -39,7 +39,7 @@
 a.avatar{
     /*text-align: center;*/
     position:absolute;
-    left: 44.5%;
+    left: 45%;
     top: 12%;
     cursor: pointer;
 }
@@ -68,7 +68,7 @@ a.avatar{
 }
  .links{
     position:absolute;
-    left: 24%;
+    left: 25%;
     bottom: 22%;
     padding: 0;
 }
